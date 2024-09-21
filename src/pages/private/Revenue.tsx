@@ -1,62 +1,67 @@
 import Construction from "../../components/shared/Construction";
-import { nanoid } from "nanoid";
-//notification
-import { useState } from "react";
+// import { nanoid } from "nanoid";
+// //notification
+// import { useState } from "react";
 
 const RevenuePage = () => {
-  // Dummy data for recent revenue transactions
-  const recentCommissions = [
-    { id: nanoid(), amount: 100, date: "2024-04-01" },
-    { id: nanoid(), amount: 150, date: "2024-03-30" },
-    { id: nanoid(), amount: 200, date: "2024-03-28" },
-    { id: nanoid(), amount: 120, date: "2024-03-25" },
-    { id: nanoid(), amount: 180, date: "2024-03-22" },
-  ];
+  // // Dummy data for recent revenue transactions
+  // const recentCommissions = [
+  //   { id: nanoid(), amount: 100, date: "2024-04-01" },
+  //   { id: nanoid(), amount: 150, date: "2024-03-30" },
+  //   { id: nanoid(), amount: 200, date: "2024-03-28" },
+  //   { id: nanoid(), amount: 120, date: "2024-03-25" },
+  //   { id: nanoid(), amount: 180, date: "2024-03-22" },
+  // ];
 
-  const recentTransactions = [
-    { id: nanoid(), amount: 50, date: "2024-04-02" },
-    { id: nanoid(), amount: 80, date: "2024-03-31" },
-    { id: nanoid(), amount: 100, date: "2024-03-29" },
-    { id: nanoid(), amount: 70, date: "2024-03-26" },
-    { id: nanoid(), amount: 90, date: "2024-03-23" },
-  ];
+  // const recentTransactions = [
+  //   { id: nanoid(), amount: 50, date: "2024-04-02" },
+  //   { id: nanoid(), amount: 80, date: "2024-03-31" },
+  //   { id: nanoid(), amount: 100, date: "2024-03-29" },
+  //   { id: nanoid(), amount: 70, date: "2024-03-26" },
+  //   { id: nanoid(), amount: 90, date: "2024-03-23" },
+  // ];
 
-  const recentPlans = [
-    { id: nanoid(), amount: 200, date: "2024-03-27" },
-    { id: nanoid(), amount: 300, date: "2024-03-24" },
-    { id: nanoid(), amount: 250, date: "2024-03-21" },
-    { id: nanoid(), amount: 180, date: "2024-03-18" },
-    { id: nanoid(), amount: 220, date: "2024-03-15" },
-  ];
+  // const recentPlans = [
+  //   { id: nanoid(), amount: 200, date: "2024-03-27" },
+  //   { id: nanoid(), amount: 300, date: "2024-03-24" },
+  //   { id: nanoid(), amount: 250, date: "2024-03-21" },
+  //   { id: nanoid(), amount: 180, date: "2024-03-18" },
+  //   { id: nanoid(), amount: 220, date: "2024-03-15" },
+  // ];
 
-  const [selectedType, setSelectedType] = useState<string>("all");
+  // const [selectedType, setSelectedType] = useState<string>("all");
+
+  // // Handle type selection
+  // const handleTypeSelect = (type: string) => {
+  //   setSelectedType(type);
+  // };
 
   // Filtered recent transactions based on selected type
-  let filteredTransactions = [];
+  // let filteredTransactions = [];
 
-  if (selectedType === "commission") {
-    filteredTransactions = recentCommissions;
-  } else if (selectedType === "transaction") {
-    filteredTransactions = recentTransactions;
-  } else if (selectedType === "plan") {
-    filteredTransactions = recentPlans;
-  } else {
-    filteredTransactions = [
-      ...recentCommissions,
-      ...recentTransactions,
-      ...recentPlans,
-    ];
-  }
+  // if (selectedType === "commission") {
+  //   filteredTransactions = recentCommissions;
+  // } else if (selectedType === "transaction") {
+  //   filteredTransactions = recentTransactions;
+  // } else if (selectedType === "plan") {
+  //   filteredTransactions = recentPlans;
+  // } else {
+  //   filteredTransactions = [
+  //     ...recentCommissions,
+  //     ...recentTransactions,
+  //     ...recentPlans,
+  //   ];
+  // }
 
-  const revenueFilterData = ["all", "commission", "transaction", "plan"];
+  // const revenueFilterData = ["all", "commission", "transaction", "plan"];
 
-  const tableHeader = ["S/N", "Type", "Amount", "Date"];
+  // const tableHeader = ["S/N", "Type", "Amount", "Date"];
 
-  // Calculate total revenue
-  const totalRevenue = filteredTransactions.reduce(
-    (acc, curr) => acc + curr.amount,
-    0
-  );
+  // // Calculate total revenue
+  // const totalRevenue = filteredTransactions.reduce(
+  //   (acc, curr) => acc + curr.amount,
+  //   0
+  // );
 
   return (
     <div className="pl-20 lg:pl-20 pt-20 lg:pt-28 w-full h-screen overflow-hidden overflow-y-auto no-scrollbar children">

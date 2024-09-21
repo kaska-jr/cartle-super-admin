@@ -9,6 +9,7 @@ const defaultValues = {
   setIsLoggedIn: () => undefined,
   login: (_admin: any) => {}, // Update to return void (implicitly)
   logout: () => undefined,
+  token: undefined,
 };
 
 export const AuthContext = createContext(defaultValues);
@@ -54,6 +55,7 @@ export default function AuthContextProvider({
         setIsLoggedIn,
         login,
         logout,
+        token,
       }}
     >
       {children}

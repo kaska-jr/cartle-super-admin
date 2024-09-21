@@ -1,5 +1,3 @@
-import SunIcon from "../../media/Sun.png";
-
 export default function ThemeSwitch() {
   const isActive = "light";
   const containerClasses = `mt-3 p-1 w-14 mx-0 h-8 rounded-full p-1 cursor-pointer bg-white border border-gray-200 dark:border-gray-600 dark:bg-gray-700 rotate-90`;

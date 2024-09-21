@@ -15,6 +15,7 @@ export function convertToNormalTime(isoString: string) {
 
   // HH:MM:SS
   const time = `${hours}:${minutes}:${seconds}`;
+  console.log(time);
 
   // Format date and time as "YYYY-MM-DD"
   return `${day}-${month}-${year}`;
