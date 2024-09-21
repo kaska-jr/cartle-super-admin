@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Medium.ttf") format("truetype");
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.8px;
+}
+
+.children::-webkit-scrollbar {
+  display: none;
+}
+.integration {
+  display: flex;
+  height: 40px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.inte {
+  flex-shrink: 0;
+}
+.toggle {
+  position: absolute;
+  right: 1px;
+  top: 9px;
+}
+.bg-layout {
+  background-color: #f7f8fa;
+}
+.moon-light-mode {
+  opacity: 0.4;
+}
+.cards {
+  border-radius: 14px;
+  box-shadow: inset;
+  /* border: 1px solid #edf2f7; */
+  /* background: #fff; */
+}
+.progress-purple {
+  background: var(--Purple, #6160dc);
+}
+.progress-blue {
+  background: var(--Blue, #54c5eb);
+}
+.progress-orange {
+  background: var(--Orange, #ffb74a);
+}
+.bg-progress {
+  background: #ed544e;
+}
+/* Add these styles to your CSS or stylesheet */
+/* Add these styles to your CSS or stylesheet */
+.transition-collapsed {
+  transform: translateX(0);
+  width: 54px; /* Adjust the width for the collapsed state */
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.transition-expanded {
+  transform: translateX(0);
+  width: 150px; /* Adjust the width for the expanded state */
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.lds-ring,
+.lds-ring div {
+  box-sizing: border-box;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid currentColor;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: currentColor transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+  margin: 15px auto;
+  position: relative;
+  color: #f97316;
+  box-sizing: border-box;
+  animation: animloader 1s linear infinite alternate;
+}
+
+@keyframes animloader {
+  0% {
+    box-shadow: -38px -12px, -14px 0, 14px 0, 38px 0;
+  }
+  33% {
+    box-shadow: -38px 0px, -14px -12px, 14px 0, 38px 0;
+  }
+  66% {
+    box-shadow: -38px 0px, -14px 0, 14px -12px, 38px 0;
+  }
+  100% {
+    box-shadow: -38px 0, -14px 0, 14px 0, 38px -12px;
+  }
+}
+
+.recharts-layer .recharts-bar-rectangle path {
+  border-top: 50% !important;
+}
+
+.lds-ring,
+.lds-ring div {
+  box-sizing: border-box;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #f97316;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #f97316 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bg-image {
+  background-image: url("./assets/images/login.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
